@@ -1,0 +1,155 @@
+* { 
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html { 
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#main {
+
+}
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    background-color: #000;
+    
+
+
+}
+#nav li {  
+    position: relative;
+
+}
+
+#nav li:hover .subnav { 
+    display: block;
+    min-width: 160px;
+
+}
+#nav > li {
+    display: inline-block;
+
+    
+}
+
+
+#nav > li > a { 
+    color: #fff;
+
+}
+#nav , .subnav { 
+    list-style-type: none;
+}
+#nav { 
+    display: inline-block;
+}
+
+#nav  li  a { 
+    display: block;
+    text-decoration: none;
+    padding: 0px 24px;
+    line-height: 46px;
+    list-style-type: none;
+
+}
+
+#nav > li:hover > a , 
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#nav li { 
+    position: relative;
+
+}
+
+
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba( 0 , 0 , 0 ,0.3);
+    top: 100%;
+
+}
+
+
+#nav .subnav a { 
+    color: #000;
+    display: inline-block;
+    padding: 0px 12px;
+    line-height: 38px;
+
+}
+
+#nav .icon-arrow-down { 
+    font-size: 14px;
+
+}
+#header .search-btn {
+    float: right;
+   line-height: 46px;
+   padding: 0 21px;
+
+
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    
+}
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+   
+}
+
+
+#slider {
+    position: relative;
+    margin-top:  46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/ny.jpeg') top center / cover no-repeat;
+
+    /* gộp background image: url() - bg position - bg size - bg repeat */
+
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    width: 100%;
+
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+
+#slider .text-descr {
+    font-size: 15px;
+    margin-top: 25px;
+
+}
+
+
+#content {
+   
+
+}
+    
+#footer {
+
+    }
