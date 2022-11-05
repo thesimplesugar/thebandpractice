@@ -13,12 +13,13 @@ html {
 }
 #header {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46px;
     background-color: #000;
-    
+    z-index: 1;
+
 
 
 }
@@ -29,13 +30,12 @@ html {
 
 #nav li:hover .subnav { 
     display: block;
-    min-width: 160px;
 
 }
 #nav > li {
     display: inline-block;
 
-    
+
 }
 
 
@@ -53,14 +53,14 @@ html {
 #nav  li  a { 
     display: block;
     text-decoration: none;
-    padding: 0px 24px;
+    padding: 0 24px;
     line-height: 46px;
     list-style-type: none;
 
 }
 
 #nav > li:hover > a , 
-#nav .subnav li:hover {
+#nav .subnav li:hover a {
     color: #000;
     background-color: #ccc;
 }
@@ -75,16 +75,16 @@ html {
     display: none;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba( 0 , 0 , 0 ,0.3);
+    box-shadow: 0 0 10px rgba( 0, 0, 0,0.3);
     top: 100%;
-
+    left: 0; 
+    min-width: 160px;
 }
 
 
 #nav .subnav a { 
     color: #000;
-    display: inline-block;
-    padding: 0px 12px;
+    padding: 0 12px;
     line-height: 38px;
 
 }
@@ -93,63 +93,60 @@ html {
     font-size: 14px;
 
 }
+
 #header .search-btn {
     float: right;
-   line-height: 46px;
-   padding: 0 21px;
+    padding: 0 21px;
 
 
 }
+
 #header .search-btn:hover {
     background-color: #f44336;
-    
+    cursor: pointer;
 }
 #header .search-icon {
     color: #fff;
     font-size: 20px;
-    cursor: pointer;
-   
-}
+    line-height: 46px;
 
+}
 
 #slider {
     position: relative;
-    margin-top:  46px;
+    margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider/ny.jpeg') top center / cover no-repeat;
-
-    /* gộp background image: url() - bg position - bg size - bg repeat */
+    background: url('/pracetice1_theband/assets/img/slider/ny.jpeg')  top center / cover no-repeat;
 
 }
+
 #slider .text-content {
     position: absolute;
     bottom: 47px;
     color: #fff;
     /* left: 50%;
-    transform: translateX(-50%); */
     text-align: center;
+    transform: translateX(-50%); */
     width: 100%;
-
+    text-align: center;
 }
 
 #slider .text-heading {
     font-weight: 500;
     font-size: 24px;
-    
 }
 
-#slider .text-descr {
+#slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-
 }
-
 
 #content {
-   
+
+
 
 }
-    
+
 #footer {
 
     }
